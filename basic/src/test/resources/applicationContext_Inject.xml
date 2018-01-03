@@ -65,7 +65,7 @@
                 <map>
                     <entry key="url" value="jdbc:mysql:///crm" ></entry>
                     <entry key="user" value-ref="user"  ></entry>
-                    <entry key-ref="userConstructor" value-ref="userSpringExpressionLanguage"  ></entry>
+                    <entry key-ref="userConstructor" value-ref="role"  ></entry>
                 </map>
             </property>
             <!-- prperties 类型注入 -->
