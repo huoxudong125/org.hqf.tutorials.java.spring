@@ -4,6 +4,14 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <beans>
-        <bean class="org.hqf.tutorials.spring.domain.User" id="user" name="user"></bean>
+        <bean class="org.hqf.tutorials.spring.domain.User" name="user"></bean>
+
+        <!--静态工厂方法创建User-->
+        <bean class="UserFactory" factory-method="createUserStatic" name="userByStaticFactory"></bean>
+
+        <!--动态工厂方法创建User-->
+        <bean class="UserFactory" name="userFactory"></bean>
+        <bean factory-bean="userFactory" factory-method="createUser" name="userByFactory"></bean>
+
     </beans>
 </beans>
