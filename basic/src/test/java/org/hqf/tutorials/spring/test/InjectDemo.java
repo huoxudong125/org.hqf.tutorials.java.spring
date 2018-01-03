@@ -29,5 +29,26 @@ public class InjectDemo {
     }
 
 
+    @Test
+    public void getUserBySpringNamespaceInject(){
+
+        ApplicationContext context=new ClassPathXmlApplicationContext("applicationContext_Inject.xml");
+        User user = (User) context.getBean("userNamespaceInject");
+
+        Assert.assertNotNull(user);
+        System.out.println("user = " + user);
+    }
+
+    @Test
+    public void getUserBySpringExpressionLanguageInject(){
+
+        ApplicationContext context=new ClassPathXmlApplicationContext("applicationContext_Inject.xml");
+        User user = (User) context.getBean("userSpringExpressionLanguage");
+
+        Assert.assertNotNull(user);
+        System.out.println("user = " + user);
+    }
+
+
 
 }

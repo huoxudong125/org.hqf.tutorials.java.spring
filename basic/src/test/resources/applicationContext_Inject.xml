@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd ">
 
     <beans>
 
+        <!--属性注入-->
         <bean class="org.hqf.tutorials.spring.domain.User" name="user" scope="prototype">
             <property name="name" value="Frank"/>
             <property name="age" value="18"/>
@@ -15,13 +17,28 @@
             <property name="name" value="Admin"></property>
         </bean>
 
-
+        <!--构造函数注入-->
         <bean class="org.hqf.tutorials.spring.domain.User" name="userConstructor" scope="prototype">
             <constructor-arg name="name" value="Tom"/>
             <constructor-arg name="age" value="28"/>
             <constructor-arg name="role" ref="role"/>
         </bean>
 
+        <!--命名空间注入-->
+        <!--需要引入 xmlns:p="http://www.springframework.org/schema/p"-->
+        <bean class="org.hqf.tutorials.spring.domain.User" name="userNamespaceInject"
+              scope="prototype"
+              p:age="20"
+              p:name="jeffery"
+              p:role-ref="role"
+        />
+
+        <!--Spring Expression Language 注入-->
+        <bean class="org.hqf.tutorials.spring.domain.User" name="userSpringExpressionLanguage" scope="prototype">
+            <property name="name" value="#{user.name}"/>
+            <property name="age" value="#{userNamespaceInject.age}"/>
+            <property name="role" ref="role"/>
+        </bean>
 
     </beans>
 </beans>
