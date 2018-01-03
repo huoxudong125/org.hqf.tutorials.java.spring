@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <beans>
+
+        <bean class="org.hqf.tutorials.spring.domain.User" name="user" scope="prototype">
+            <property name="name" value="Frank"/>
+            <property name="age" value="18"/>
+            <property name="role" ref="role"/>
+        </bean>
+
+        <bean class="org.hqf.tutorials.spring.domain.Role" name="role">
+            <property name="name" value="Admin"></property>
+        </bean>
+
+
+        <bean class="org.hqf.tutorials.spring.domain.User" name="userConstructor" scope="prototype">
+            <constructor-arg name="name" value="Tom"/>
+            <constructor-arg name="age" value="28"/>
+            <constructor-arg name="role" ref="role"/>
+        </bean>
+
+
+    </beans>
+</beans>

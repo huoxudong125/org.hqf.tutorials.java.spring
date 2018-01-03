@@ -5,6 +5,27 @@ public class User {
     private String name;
     private int age;
 
+    public User(){
+
+    }
+
+    public User(String name, int age, Role role) {
+        this.name = name;
+        this.age = age;
+        this.role = role;
+    }
+
+    private Role role;
+
+    public Role getRole() {
+        return role;
+    }
+
+    public void setRole(Role role) {
+        this.role = role;
+    }
+
+
     public long getId() {
         return id;
     }
@@ -36,4 +57,12 @@ public class User {
     private void init() {
         System.out.println("init User");
     }
+
+
+    @Override
+    public String toString() {
+        return String.format("Id:{%s},name:{%s},age:{%s},role:{%s}", id, name, age, role);
+    }
+
+
 }
