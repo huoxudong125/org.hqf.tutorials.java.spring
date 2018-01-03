@@ -1,3 +1,5 @@
+package org.hqf.tutorials.spring.test;
+
 import org.hqf.tutorials.spring.domain.User;
 
 public class UserFactory {

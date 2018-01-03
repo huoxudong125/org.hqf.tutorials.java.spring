@@ -1,3 +1,5 @@
+package org.hqf.tutorials.spring.test;
+
 import org.hqf.tutorials.spring.domain.User;
 import org.junit.Assert;
 import org.junit.Test;
@@ -9,7 +11,7 @@ public class HelloWorld {
     @Test
     public void getUserBySpring(){
 
-        ApplicationContext context=new ClassPathXmlApplicationContext("applicationContext.xml");
+        ApplicationContext context=new ClassPathXmlApplicationContext("applicationContext_HelloWorld.xml");
         User user = (User) context.getBean("user");
 
         Assert.assertNotNull(user);
@@ -19,7 +21,7 @@ public class HelloWorld {
     @Test
     public void getUserByStaticFactory(){
 
-        ApplicationContext context=new ClassPathXmlApplicationContext("applicationContext.xml");
+        ApplicationContext context=new ClassPathXmlApplicationContext("applicationContext_HelloWorld.xml");
         User user = (User) context.getBean("userByStaticFactory");
         Assert.assertNotNull(user);
 
@@ -29,7 +31,7 @@ public class HelloWorld {
     @Test
     public void getUserByFactory(){
 
-        ApplicationContext context=new ClassPathXmlApplicationContext("applicationContext.xml");
+        ApplicationContext context=new ClassPathXmlApplicationContext("applicationContext_HelloWorld.xml");
         User user = (User) context.getBean("userByFactory");
         Assert.assertNotNull(user);
 
