@@ -28,4 +28,12 @@ public class User {
     public void setAge(int age) {
         this.age = age;
     }
+
+    private void destory() {
+        System.out.println("destroy User");
+    }
+
+    private void init() {
+        System.out.println("init User");
+    }
 }
