@@ -40,5 +40,44 @@
             <property name="role" ref="role"/>
         </bean>
 
+
+        <bean class="org.hqf.tutorials.spring.domain.CollectionBean" name="collectionBean">
+
+            <!--<property name="array" value="singleVale"/>-->
+            <property name="array">
+                <array>
+                    <value>Array 0</value>
+                    <ref bean="role"></ref>
+                </array>
+            </property>
+
+            <!-- 如果List中只准备注入一个值(对象),直接使用value|ref即可
+	<property name="list" value="jack" ></property>-->
+            <property name="list"  >
+                <list>
+                    <value>jack</value>
+                    <value>rose</value>
+                    <ref bean="user" />
+                </list>
+            </property>
+            <!-- map类型注入 -->
+            <property name="map"  >
+                <map>
+                    <entry key="url" value="jdbc:mysql:///crm" ></entry>
+                    <entry key="user" value-ref="user"  ></entry>
+                    <entry key-ref="userConstructor" value-ref="userSpringExpressionLanguage"  ></entry>
+                </map>
+            </property>
+            <!-- prperties 类型注入 -->
+            <property name="props"  >
+                <props>
+                    <prop key="driverClass">com.jdbc.mysql.Driver</prop>
+                    <prop key="userName">root</prop>
+                    <prop key="password">1234</prop>
+                </props>
+            </property>
+
+        </bean>
+
     </beans>
 </beans>
