@@ -12,6 +12,7 @@
         <module>basic</module>
         <module>aop</module>
         <module>jdbc</module>
+        <module>transaction</module>
     </modules>
 
 
