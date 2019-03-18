@@ -9,15 +9,18 @@
         <module name="aop" />
         <module name="basic" />
         <module name="jdbc" />
+        <module name="multi-datasource" />
         <module name="transaction" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="aop" target="1.5" />
-      <module name="basic" target="1.5" />
-      <module name="jdbc" target="1.5" />
-      <module name="parent" target="1.5" />
-      <module name="transaction" target="1.5" />
+      <module name="aop" target="1.8" />
+      <module name="basic" target="1.8" />
+      <module name="jdbc" target="1.8" />
+      <module name="multi-datasource" target="1.8" />
+      <module name="org.hqf.tutorials.spring" target="1.8" />
+      <module name="parent" target="1.8" />
+      <module name="transaction" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -13,6 +13,7 @@
         <module>aop</module>
         <module>jdbc</module>
         <module>transaction</module>
+        <module>multi-datasource</module>
     </modules>
 
 
@@ -120,6 +121,5 @@
 
         </dependencies>
     </dependencyManagement>
-
 
 </project>
