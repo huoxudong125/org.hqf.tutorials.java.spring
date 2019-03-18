@@ -24,5 +24,6 @@ public class UserServiceImplTest {
 
     @Test
     public void queryUser() {
+        userService.queryUser(1L);
     }
 }
