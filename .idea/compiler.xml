@@ -6,11 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="aop" />
-        <module name="basic" />
-        <module name="jdbc" />
+        <module name="spring-cachable" />
         <module name="multi-datasource" />
         <module name="transaction" />
+        <module name="jdbc" />
+        <module name="basic" />
+        <module name="aop" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -20,6 +21,7 @@
       <module name="multi-datasource" target="1.8" />
       <module name="org.hqf.tutorials.spring" target="1.8" />
       <module name="parent" target="1.8" />
+      <module name="spring-cachable" target="1.8" />
       <module name="transaction" target="1.8" />
     </bytecodeTargetLevel>
   </component>
