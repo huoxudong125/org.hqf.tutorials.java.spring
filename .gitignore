@@ -271,3 +271,4 @@ buildNumber.properties
 *.~vsd*
 
 /*.iml
+/.idea/compiler.xml
