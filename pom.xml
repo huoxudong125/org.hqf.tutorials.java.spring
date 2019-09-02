@@ -15,6 +15,7 @@
         <module>transaction</module>
         <module>multi-datasource</module>
         <module>spring-cachable</module>
+        <module>el</module>
     </modules>
 
 

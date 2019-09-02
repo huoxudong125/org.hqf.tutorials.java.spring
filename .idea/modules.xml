@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/aop/aop.iml" filepath="$PROJECT_DIR$/aop/aop.iml" />
       <module fileurl="file://$PROJECT_DIR$/basic/basic.iml" filepath="$PROJECT_DIR$/basic/basic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/el/el.iml" filepath="$PROJECT_DIR$/el/el.iml" />
       <module fileurl="file://$PROJECT_DIR$/jdbc/jdbc.iml" filepath="$PROJECT_DIR$/jdbc/jdbc.iml" />
       <module fileurl="file://$PROJECT_DIR$/multi-datasource/multi-datasource.iml" filepath="$PROJECT_DIR$/multi-datasource/multi-datasource.iml" />
       <module fileurl="file://$PROJECT_DIR$/org.hqf.tutorials.spring.iml" filepath="$PROJECT_DIR$/org.hqf.tutorials.spring.iml" />
