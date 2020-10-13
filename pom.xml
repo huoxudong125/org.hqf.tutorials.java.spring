@@ -21,7 +21,7 @@
 
     <properties>
         <springframework.version>4.3.13.RELEASE</springframework.version>
-        <junit.version>4.12</junit.version>
+        <junit.version>4.13.1</junit.version>
         <aspectj.version>1.8.7</aspectj.version>
     </properties>
 
